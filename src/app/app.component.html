@@ -1,21 +1,939 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- Skippy -->
+<a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+    <div class="container">
+        <span class="u-skiplink-text">Skip to main content</span>
+    </div>
+</a>
+<!-- End Skippy -->
+
+<!-- ========== HEADER ========== -->
+<header id="header" class="u-header u-header--modern u-header--bordered u-header--navbar-bg u-header--sticky-top-lg">
+    <div class="u-header__section bg-dark">
+        <div id="logoAndNav" class="container-fluid">
+            <!-- Nav -->
+            <nav class="js-mega-menu navbar navbar-expand-lg u-header__navbar">
+                <!-- Logo -->
+                <div class="u-header__navbar-brand-wrapper">
+                    <a class="navbar-brand u-header__navbar-brand js-go-to" href="javascript:;" data-target="#content" data-show-effect="slideInUp" data-hide-effect="slideOutDown" aria-label="Stuffy">
+                        <img class="u-header__navbar-brand-default" src="../../assets/svg/logos/stuffy-logo-white.svg" alt="Logo">
+                        <img class="u-header__navbar-brand-mobile" src="../../assets/svg/logos/logo-short-white.svg" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Logo -->
+
+                <!-- Responsive Toggle Button -->
+                <button type="button" class="navbar-toggler btn u-hamburger u-header__hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                    <span class="d-none d-sm-inline-block">Menu</span>
+                    <span id="hamburgerTrigger" class="u-hamburger__box ml-3">
+                        <span class="u-hamburger__inner"></span>
+                    </span>
+                </button>
+                <!-- End Responsive Toggle Button -->
+
+                <!-- Navigation -->
+                <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse py-0">
+                    <ul class="navbar-nav u-header__navbar-nav">
+                        <!-- Home -->
+                        <li class="nav-item u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
+                            <a id="homeMegaMenu" class="nav-link u-header__nav-link js-go-to" href="javascript:;" data-target="#content" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+                                Home
+                            </a>
+                        </li>
+                        <!-- End Home -->
+
+                        <!-- Services -->
+                        <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
+                            <a id="furnitureRemovalMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="furnitureRemovalSubMenu">
+                                Furniture Removal
+                                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+                            </a>
+
+                            <!-- Shop - Submenu -->
+                            <ul id="furnitureRemovalSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;" aria-labelledby="furnitureRemovalMegaMenu">
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Home
+                                        Removals</a>
+                                </li>
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Office
+                                        Removals</a>
+                                </li>
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Long-Distance
+                                        Removal</a>
+                                </li>
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link  js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Local
+                                        Removals</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Services -->
+                        <!-- Services -->
+                        <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
+                            <a id="packingMegaMenu" class="nav-link u-header__nav-link" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="packingSubMenu">
+                                Packing
+                                <span class="fa fa-angle-down u-header__nav-link-icon"></span>
+                            </a>
+
+                            <!-- Shop - Submenu -->
+                            <ul id="packingSubMenu" class="list-inline hs-sub-menu u-header__sub-menu mb-0" style="min-width: 220px;" aria-labelledby="packingMegaMenu">
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link  js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Packaging
+                                        Material</a>
+                                </li>
+                                <li class="dropdown-item u-header__sub-menu-list-item py-0">
+                                    <a class="nav-link u-header__sub-menu-nav-link  js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Packing
+                                        Service</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End Services -->
+
+                        <!-- Contact Us -->
+                        <li class="nav-item hs-has-sub-menu u-header__nav-item" data-event="hover" data-animation-in="fadeInUp" data-animation-out="fadeOut">
+                            <a id="contactUsMegaMenu" class="nav-link u-header__nav-link js-go-to-contact-us" href="javascript:;" data-target="#contact-us" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+                                Contact Us
+                            </a>
+                        </li>
+                        <!-- End Contact Us -->
+
+                    </ul>
+                </div>
+                <!-- End Navigation -->
+                <ul class="navbar-nav flex-row u-header__secondary-nav u-header__navbar-v-divider">
+                    <!-- call us -->
+                    <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
+                        <a id="phoneNumberDropdownInvoker" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button" aria-controls="phoneNumberDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#phoneNumberDropdown"
+                            data-unfold-type="css-animation" data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                            <span class="fa fa-phone btn-icon__inner"></span>
+                        </a>
+
+                        <div id="phoneNumberDropdown" class="u-unfold u-unfold--cart text-center border rounded-0 right-0 p-7" aria-labelledby="phoneNumberDropdownInvoker" style="min-width: 250px;">
+                            <span class="d-block"><a href="callto:011 875 2069">011 875 2069</a>
+                            </span>
+                            <span class="d-block"><a href="callto:011 875 2069"
+                                    class="reveal-inline-block text-gray-light">011 875 2069</a></span>
+                        </div>
+                    </li>
+                    <!-- End call us -->
+                    <!-- email us -->
+                    <li class="nav-item u-header__navbar-icon-wrapper u-header__navbar-icon">
+                        <a id="emailDropdownInvoker" class="btn btn-xs btn-icon btn-text-dark" href="javascript:;" role="button" aria-controls="emailDropdown" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-target="#emailDropdown" data-unfold-type="css-animation"
+                            data-unfold-duration="300" data-unfold-delay="300" data-unfold-hide-on-scroll="true" data-unfold-animation-in="slideInUp" data-unfold-animation-out="fadeOut">
+                            <span class="fa fa-mail-bulk btn-icon__inner"></span>
+                        </a>
+
+                        <div id="emailDropdown" class="u-unfold u-unfold--cart text-center border rounded-0 right-0 p-7" aria-labelledby="emailDropdownInvoker" style="min-width: 250px;">
+                            <span class="d-block"><a href="mailto:sales@stuffy.co.za">sales@stuffy.co.za</a>
+                            </span>
+                        </div>
+                    </li>
+                    <!-- End email us -->
+
+
+                </ul>
+            </nav>
+            <!-- End Nav -->
+
+        </div>
+    </div>
+</header>
+<!-- ========== END HEADER ========== -->
+
+<!-- ========== MAIN CONTENT ========== -->
+<main id="content" role="main">
+    <!-- Hero Section -->
+    <div class="js-slick-carousel u-slick" data-infinite="true" data-autoplay="true" data-speed="7000" data-fade="true" data-adaptive-height="true" data-arrows-classes="d-none d-lg-inline-block u-slick__arrow-classic u-slick__arrow-centered--y rounded-circle"
+        data-arrow-left-classes="fa fa-arrow-left u-slick__arrow-classic-inner u-slick__arrow-classic-inner--left ml-lg-2 ml-xl-4" data-arrow-right-classes="fa fa-arrow-right u-slick__arrow-classic-inner u-slick__arrow-classic-inner--right mr-lg-2 mr-xl-4"
+        data-numbered-pagination="#slickPaging">
+        <!-- Slide #1 -->
+        <div class="js-slide">
+            <div class="d-md-flex align-items-md-center height-100vh--lg gradient-overlay-half-dark-v2 bg-img-hero" style="background-image: url(../../assets/img/1440x840/home-removals.jpg);">
+                <div class="container text-center space-2 space-3--md">
+                    <!-- Description -->
+                    <div class="w-lg-80 mx-lg-auto mb-3">
+                        <h1 class="display-3 font-size-48--md-down text-white" data-scs-animation-in="fadeInUp">Home removal specialists</h1>
+                    </div>
+                    <div class="w-lg-50 mx-lg-auto mb-7">
+                        <p class="lead text-white" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">Our team has experience of moving families and individuals.</p>
+                    </div>
+                    <div data-scs-animation-in="fadeInUp" data-scs-animation-delay="400">
+                        <a class="btn btn-primary js-go-to-get-a-quote" href="javascript:;" data-target="#get-a-quote" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Get
+                            a Free Quote</a>
+                    </div>
+                    <!-- End Description -->
+                </div>
+            </div>
+        </div>
+        <!-- End Slide #1 -->
+
+        <!-- Slide #2 -->
+        <div class="js-slide">
+            <div class="d-md-flex align-items-md-center height-100vh--lg gradient-overlay-half-dark-v2 bg-img-hero" style="background-image: url(../../assets/img/1200x600/offce_removal.jpg);">
+                <div class="container text-center space-2 space-3--md">
+                    <!-- Description -->
+                    <div class="w-lg-80 mx-lg-auto mb-3">
+                        <h1 class="display-3 font-size-48--md-down text-white" data-scs-animation-in="fadeInUp">Office removal experts</h1>
+                    </div>
+                    <div class="w-lg-50 mx-lg-auto mb-7">
+                        <p class="lead text-white" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">We offer comprehensive and efficient office moving services.</p>
+                    </div>
+                    <div data-scs-animation-in="fadeInUp" data-scs-animation-delay="400">
+                        <a class="btn btn-primary js-go-to-get-a-quote" href="javascript:;" data-target="#get-a-quote" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Get
+                            a Free Quote</a>
+                    </div>
+                    <!-- End Description -->
+                </div>
+            </div>
+        </div>
+        <!-- End Slide #2 -->
+
+        <!-- Slide #3 -->
+        <div class="js-slide">
+            <div class="d-md-flex align-items-md-center height-100vh--lg gradient-overlay-half-dark-v2 bg-img-hero" style="background-image: url(../../assets/img/1200x1800/local-removals-1024x675.jpg);">
+                <div class="container text-center space-2 space-3--md">
+                    <!-- Description -->
+                    <div class="w-lg-80 mx-lg-auto mb-3">
+                        <h1 class="display-3 font-size-48--md-down text-white" data-scs-animation-in="fadeInUp">
+                            Long-distance and local removals</h1>
+                    </div>
+                    <div class="w-lg-50 mx-lg-auto mb-7">
+                        <p class="lead text-white" data-scs-animation-in="fadeInUp" data-scs-animation-delay="200">Our footprint is everywhere and we deliver to all provinces.</p>
+                    </div>
+                    <div data-scs-animation-in="fadeInUp" data-scs-animation-delay="400">
+                        <a class="btn btn-primary js-go-to-get-a-quote" href="javascript:;" data-target="#get-a-quote" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Get
+                            a Free Quote</a>
+                    </div>
+                    <!-- End Description -->
+                </div>
+            </div>
+        </div>
+        <!-- End Slide #3 -->
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Hero Slick Paging -->
+    <div class="container position-relative">
+        <div id="slickPaging" class="u-slick__paging-v1"></div>
+    </div>
+    <!-- End Hero Slick Paging -->
+
+    <!-- Features Section -->
+    <div class="container space-2 space-2-bottom--lg" id="value-proposition">
+        <!-- Title -->
+        <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+            <h2>Our value proposition</h2>
+        </div>
+        <!-- End Title -->
+        <div class="card-deck d-block d-lg-flex card-lg-gutters-2">
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Home Removals</h4>
+                            <p class="mb-0">Our friendly and professional team goes far and beyond to make your moving experience enjoyable and easy!</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Office Removals</h4>
+                            <p>We help your organisation relocate with minimum disruption and maximum efficiency.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Local Removals</h4>
+                            <p>We provide a comprehensive service for commercial or domestic house removal within Gauteng.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+        </div>
+
+        <div class="card-deck d-block d-lg-flex card-lg-gutters-2">
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Long-Distance Removals</h4>
+                            <p>We are experts in express long-distance removals or shared loads to Eastern Cape, Free State, KwaZulu-Natal, Limpopo, Mpumalanga, North West, Northern Cape, Western Cape </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Packaging Material</h4>
+                            <p>We supply high quality packaging material such boxes, bubble-wrap, couch and mattress covers to protect your valuables.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+
+            <div class="card card-frame mb-3">
+                <!-- Listing -->
+                <a class="card-body p-4">
+                    <div class="media">
+                        <img class="max-width-9 mb-2" src="../../assets/svg/components/moving-up-primary-icon.svg" alt="Image Description">
+                        <div class="media-body px-4">
+                            <h4 class="h6 text-dark mb-1">Packing Service</h4>
+                            <p>Our well trained professional packers will securely pack your home or office.</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Listing -->
+            </div>
+        </div>
+    </div>
+    <!-- End Features Section -->
+
+    <!-- Testimonials Section -->
+    <div class="bg-light" id="testimonials">
+        <div class="container space-2 space-3--md">
+            <!-- Title -->
+            <div class="w-md-80 w-lg-60 text-center mx-md-auto mb-9">
+                <h2>What people say about us</h2>
+            </div>
+            <!-- End Title -->
+
+            <!-- Slick Carousel -->
+            <div class="js-slick-carousel u-slick u-slick--equal-height u-slick--gutters-3" data-slides-show="3" data-autoplay="true" data-speed="5000" data-pagi-classes="text-center u-slick__pagination mt-3 mb-0" data-responsive='[{
+           "breakpoint": 992,
+           "settings": {
+             "slidesToShow": 2
+           }
+         }, {
+           "breakpoint": 768,
+           "settings": {
+             "slidesToShow": 1
+           }
+         }]'>
+                <div class="js-slide my-3">
+                    <!-- Testimonials -->
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <p class="mb-0">Stuffy Removals are a brilliant team who are polite, tidy, honest, respectful towards the home and our belongings and exceeded our expectation. From the packing service and collection, till last item delivered at my desired
+                                    location at our new home. We were really impressed. I will certainly recommend Stuffy Removals to our friends.</p>
+                            </div>
+                            <div class="u-sm-avatar mx-auto mb-2">
+                                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="Image Description">
+                            </div>
+                            <h4 class="h6 mb-0">Lerato Nhlanhla</h4>
+                        </div>
+                    </div>
+                    <!-- End Testimonials -->
+                </div>
+
+                <div class="js-slide my-3">
+                    <!-- Testimonials -->
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <p class="mb-0">We look forward to continue working with Stuffy for our commercial deliveries needs in the future. Our deliveries are always on time and in excellent condition.
+                                </p>
+                            </div>
+                            <div class="u-sm-avatar mx-auto mb-2">
+                                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img2.jpg" alt="Image Description">
+                            </div>
+                            <h4 class="h6 mb-0">Natasha Daniel</h4>
+                        </div>
+                    </div>
+                    <!-- End Testimonials -->
+                </div>
+
+                <div class="js-slide my-3">
+                    <!-- Testimonials -->
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <p class="mb-0">I have found the Stuffy Removals rates are always competitive, but it is their service that adds the extra value for me in every way.</p>
+                            </div>
+                            <div class="u-sm-avatar mx-auto mb-2">
+                                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img3.jpg" alt="Image Description">
+                            </div>
+                            <h4 class="h6 mb-0">Johanna Patton</h4>
+                        </div>
+                    </div>
+                    <!-- End Testimonials -->
+                </div>
+
+                <div class="js-slide my-3">
+                    <!-- Testimonials -->
+                    <div class="card text-center border-0 shadow-sm">
+                        <div class="card-body p-5">
+                            <div class="mb-4">
+                                <p class="mb-0">Many thanks to the packing and moving crew for a great service.</p>
+                            </div>
+                            <div class="u-sm-avatar mx-auto mb-2">
+                                <img class="img-fluid rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image Description">
+                            </div>
+                            <h4 class="h6 mb-0">Glenn Jefferson</h4>
+                        </div>
+                    </div>
+                    <!-- End Testimonials -->
+                </div>
+            </div>
+            <!-- End Slick Carousel -->
+        </div>
+    </div>
+    <!-- End Testimonials Section -->
+
+    <!-- Contacts Section -->
+    <div class="container space-2 space-3--lg" id="contact-us">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 mb-7 mb-md-0">
+                <h2 class="h4">Johannesburg, South Africa</h2>
+                <span class="d-block text-secondary">Physical Address</span>
+
+                <hr class="my-5">
+
+                <address>
+                    <!-- Contacts List -->
+                    <ul class="list-unstyled text-secondary">
+                        <li class="media align-items-center pb-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/location-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                220 Elsecar Street,Kya Sands, Randburg, 2163
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- End Contacts List -->
+                </address>
+            </div>
+
+            <div class="col-sm-6 col-md-4 mb-7 mb-sm-0">
+                <h3 class="h4">&nbsp; </h3>
+                <span class="d-block text-secondary">Contact Details</span>
+
+                <hr class="my-5">
+
+                <address>
+                    <!-- Contacts List -->
+                    <ul class="list-unstyled text-secondary">
+
+
+                        <li class="media align-items-center py-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/contacts-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                011 875 2069
+                            </div>
+                        </li>
+
+                        <li class="media align-items-center py-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/contacts-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                011 875 2069
+                            </div>
+                        </li>
+                        <li class="media align-items-center pb-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/email-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                sales@stuffy.co.za
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- End Contacts List -->
+                </address>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <h3 class="h4">&nbsp;</h3>
+                <span class="d-block text-secondary">Operating Hours</span>
+
+                <hr class="my-5">
+
+                <address>
+                    <!-- Contacts List -->
+                    <ul class="list-unstyled text-secondary">
+                        <li class="media align-items-center py-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/clock-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                Mon-Fri: 8 AM to 5 PM
+                            </div>
+                        </li>
+                        <li class="media align-items-center py-2">
+                            <img class="max-width-5 mr-2" src="../../assets/svg/components/clock-dark-icon.svg"
+                                alt="Image Description">
+                            <div class="media-body">
+                                Saturday: 8 AM to 1 PM
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- End Contacts List -->
+                </address>
+            </div>
+        </div>
+    </div>
+    <!-- End Contacts Section -->
+
+
+</main>
+<!-- ========== END MAIN CONTENT ========== -->
+
+<!-- ========== FOOTER ========== -->
+<footer class="bg-dark">
+    <div class="container space-2">
+        <div class="row justify-content-md-between">
+            <div class="col-6 col-md-3 col-lg-2 order-lg-3 mb-7 mb-lg-0">
+                <h3 class="h6 text-white mb-3">Furniture Removal</h3>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-transparent">
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Home
+                        Removals</a>
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Office
+                        Removals</a>
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Long
+                        Distance Removals</a>
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Local
+                        Removals</a>
+                </div>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 order-lg-4 mb-7 mb-lg-0">
+                <h3 class="h6 text-white mb-3">Packing</h3>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-transparent">
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Packaging
+                        Material</a>
+                    <a class="list-group-item list-group-item-action js-go-to-value-proposition" href="javascript:;" data-target="#value-proposition" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Packing
+                        Servce</a>
+                </div>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 order-lg-5 mb-7 mb-lg-0">
+                <h3 class="h6 text-white mb-3">Contact Us</h3>
+
+                <!-- List Group -->
+                <div class="list-group list-group-flush list-group-transparent">
+                    <a class="list-group-item list-group-item-action  js-go-to-contact-us" href="javascript:;" data-target="#contact-us" data-show-effect="slideInUp" data-hide-effect="slideOutDown">Phone
+                        &amp; Email</a>
+                </div>
+                <!-- End List Group -->
+            </div>
+
+            <div class="col-lg-4 order-lg-1 d-flex align-items-start flex-column">
+                <!-- Logo -->
+                <a class="d-inline-block mb-5  js-go-to" href="javascript:;" data-target="#content" data-show-effect="slideInUp" data-hide-effect="slideOutDown" aria-label="Space">
+                    <img src="../../assets/svg/logos/logo-short-white.svg" alt="Logo" style="width: 40px; max-width: 100%;">
+                </a>
+                <!-- End Logo -->
+
+                <p class="small text-muted">All rights reserved. &copy; Stuffy.
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ========== END FOOTER ========== -->
+
+<!-- ========== SECONDARY CONTENTS ========== -->
+<!-- Panel Sidebar Navigation -->
+<aside id="sidebarContent" class="u-sidebar u-unfold--css-animation u-unfold--hidden" aria-labelledby="sidebarNavToggler">
+    <div class="u-sidebar__scroller">
+        <div class="u-sidebar__container">
+            <div class="u-sidebar--panel__footer-offset">
+                <!-- Toggle Button -->
+                <div class="d-flex align-items-center border-bottom py-4 px-5">
+                    <h4 class="h5 mb-0">Account</h4>
+
+                    <button type="button" class="close u-sidebar__close ml-auto" aria-controls="sidebarContent" aria-haspopup="true" aria-expanded="false" data-unfold-event="click" data-unfold-hide-on-scroll="false" data-unfold-target="#sidebarContent" data-unfold-type="css-animation"
+                        data-unfold-animation-in="fadeInRight" data-unfold-animation-out="fadeOutRight" data-unfold-duration="500">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- End Toggle Button -->
+
+                <!-- Content -->
+                <div class="js-scrollbar u-sidebar__body">
+                    <div class="u-sidebar__content py-5">
+                        <!-- Title -->
+                        <div class="py-2 px-5">
+                            <h4 class="text-uppercase text-muted font-size-13 mb-0">Menu label</h4>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- List -->
+                        <ul class="list-unstyled font-size-14 mb-5">
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/finance-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Dashboard</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/touch-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Activity</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/team-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Team</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/email-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Mailbox</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/projects-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Projects</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End List -->
+
+                        <!-- Title -->
+                        <div class="py-2 px-5">
+                            <h4 class="text-uppercase text-muted font-size-13 mb-0">Sub level</h4>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- List -->
+                        <ul class="list-unstyled font-size-14 mb-0">
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/calendar-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Calendar</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/cog-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Tools</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="media align-items-center u-sidebar--panel__link py-2 px-5" href="#">
+                                    <img class="max-width-4 mr-3" src="../../assets/svg/components/archive-dark-icon.svg" alt="Image Description">
+                                    <div class="media-body">
+                                        <span>Archive</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End List -->
+                    </div>
+                </div>
+                <!-- End Content -->
+            </div>
+
+            <!-- Footer -->
+            <footer class="u-sidebar__footer u-sidebar__footer--panel py-4 px-5">
+                <!-- List -->
+                <ul class="list-inline font-size-14 mb-0">
+                    <li class="list-inline-item">
+                        <a class="u-sidebar--panel__link pr-2" href="../pages/privacy.html">Privacy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="u-sidebar--panel__link px-2" href="../pages/terms.html">Terms</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="u-sidebar--panel__link pl-2" href="../pages/help.html">
+                            <i class="fa fa-info-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- End List -->
+            </footer>
+            <!-- End Footer -->
+        </div>
+    </div>
+</aside>
+<!-- End Panel Sidebar Navigation -->
+
+<!-- Signup Modal Window -->
+<div id="signupModal" class="js-signup-modal u-modal-window" style="width: 500px;">
+    <!-- Modal Close Button -->
+    <button class="btn btn-sm btn-icon btn-text-secondary u-modal-window__close" type="button" onclick="Custombox.modal.close();">
+        <span class="fas fa-times"></span>
+    </button>
+    <!-- End Modal Close Button -->
+
+    <!-- Content -->
+    <div class="p-5">
+        <form class="js-validate">
+            <!-- Signin -->
+            <div id="signin" data-target-group="idForm">
+                <!-- Title -->
+                <header class="text-center mb-5">
+                    <h2 class="h4 mb-0">Please sign in</h2>
+                    <p>Signin to manage your account.</p>
+                </header>
+                <!-- End Title -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-user form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control form__input" name="email" required placeholder="Email" aria-label="Email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-lock form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control form__input" name="password" required placeholder="Password" aria-label="Password" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <!-- Checkbox -->
+                        <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                            <input type="checkbox" class="custom-control-input" id="rememberMeCheckbox">
+                            <label class="custom-control-label" for="rememberMeCheckbox">
+                                Remember Me
+                            </label>
+                        </div>
+                        <!-- End Checkbox -->
+                    </div>
+
+                    <div class="col-6 text-right">
+                        <a class="js-animation-link float-right" href="javascript:;" data-target="#forgotPassword" data-link-group="idForm" data-animation-in="fadeIn">Forgot Password?</a>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-block btn-primary">Signin</button>
+                </div>
+
+                <div class="text-center mb-3">
+                    <p class="text-muted">
+                        Do not have an account?
+                        <a class="js-animation-link" href="javascript:;" data-target="#signup" data-link-group="idForm" data-animation-in="fadeIn">Signup
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Divider -->
+                <div class="text-center u-divider-wrapper my-3">
+                    <span class="u-divider u-divider--xs u-divider--text">OR</span>
+                </div>
+                <!-- End Divider -->
+
+                <!-- Signin Social Buttons -->
+                <div class="row mx-gutters-2 mb-4">
+                    <div class="col-sm-6 mb-2 mb-sm-0">
+                        <button type="button" class="btn btn-block btn-facebook">
+                            <span class="fab fa-facebook-f mr-2"></span>
+                            Signin with Facebook
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-block btn-twitter">
+                            <span class="fab fa-twitter mr-2"></span>
+                            Signin with Twitter
+                        </button>
+                    </div>
+                </div>
+                <!-- End Signin Social Buttons -->
+            </div>
+            <!-- End Signin -->
+
+            <!-- Signup -->
+            <div id="signup" style="display: none; opacity: 0;" data-target-group="idForm">
+                <!-- Title -->
+                <header class="text-center mb-5">
+                    <h2 class="h4 mb-0">Please sign up</h2>
+                    <p>Fill out the form to get started.</p>
+                </header>
+                <!-- End Title -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-user form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control form__input" name="email" required placeholder="Email" aria-label="Email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-lock form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control form__input" name="password" id="password" required placeholder="Password" aria-label="Password" data-msg="Your password is invalid. Please try again." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-key form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control form__input" name="confirmPassword" required placeholder="Confirm Password" aria-label="Confirm Password" data-msg="Password does not match the confirm password." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-block btn-primary">Signup</button>
+                </div>
+
+                <div class="text-center mb-3">
+                    <p class="text-muted">
+                        Have an account?
+                        <a class="js-animation-link" href="javascript:;" data-target="#signin" data-link-group="idForm" data-animation-in="fadeIn">Signin
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Divider -->
+                <div class="text-center u-divider-wrapper my-3">
+                    <span class="u-divider u-divider--xs u-divider--text">OR</span>
+                </div>
+                <!-- End Divider -->
+
+                <!-- Signup Social Buttons -->
+                <div class="row mx-gutters-2 mb-4">
+                    <div class="col-sm-6 mb-2 mb-sm-0">
+                        <button type="button" class="btn btn-block btn-facebook">
+                            <span class="fab fa-facebook-f mr-2"></span>
+                            Signup with Facebook
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-block btn-twitter">
+                            <span class="fab fa-twitter mr-2"></span>
+                            Signup with Twitter
+                        </button>
+                    </div>
+                </div>
+                <!-- End Signup Social Buttons -->
+            </div>
+            <!-- End Signup -->
+
+            <!-- Forgot Password -->
+            <div id="forgotPassword" style="display: none; opacity: 0;" data-target-group="idForm">
+                <!-- Title -->
+                <header class="text-center mb-5">
+                    <h2 class="h4 mb-0">Recover account</h2>
+                    <p>Enter your email address and an email with instructions will be sent to you.</p>
+                </header>
+                <!-- End Title -->
+
+                <!-- Input -->
+                <div class="js-form-message mb-3">
+                    <div class="js-focus-state input-group form">
+                        <div class="input-group-prepend form__prepend">
+                            <span class="input-group-text form__text">
+                                <span class="fa fa-user form__text-inner"></span>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control form__input" name="email" required placeholder="Email" aria-label="Email" data-msg="Please enter a valid email address." data-error-class="u-has-error" data-success-class="u-has-success">
+                    </div>
+                </div>
+                <!-- End Input -->
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-block btn-primary">Recover Account</button>
+                </div>
+
+                <div class="text-center mb-3">
+                    <p class="text-muted">
+                        Have an account?
+                        <a class="js-animation-link" href="javascript:;" data-target="#signin" data-link-group="idForm" data-animation-in="fadeIn">Signin
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- End Forgot Password -->
+        </form>
+    </div>
+    <!-- End Content -->
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- End Signup Modal Window -->
+<!-- ========== END SECONDARY CONTENTS ========== -->
+
+<!-- Go to Top -->
+<a class="js-go-to u-go-to" href="javascript:;" data-position='{"bottom": 15, "right": 15 }' data-type="fixed" data-offset-top="400" data-compensation="#header" data-show-effect="slideInUp" data-hide-effect="slideOutDown">
+    <span class="fa fa-arrow-up u-go-to__inner"></span>
+</a>
+<!-- End Go to Top -->
 
 <router-outlet></router-outlet>
